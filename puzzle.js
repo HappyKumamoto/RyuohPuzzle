@@ -8,7 +8,7 @@ el.src = "kamifu.js";
 
 	// 設定
 	size = 3;
-	main_image = "img/WellTobata.jpg";
+	main_image = "img/WellTobata.jpeg";
 	panels = [];
 	cell_w = 320 / size;
 	cell_h = 320 / size;
