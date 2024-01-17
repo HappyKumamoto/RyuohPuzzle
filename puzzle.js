@@ -153,6 +153,7 @@ el.src = "kamifu.js";
 		if (clear(panels)) {
 			document.getElementById("message").innerHTML = "<p>\\おめでとうございます。/<br>\\完成です！/<\/p>";
 			context.drawImage(image, 0, 0);
+			document.body.appendChild(el);  //kami.jsで紙吹雪を出す
 			
 		}
 	}
