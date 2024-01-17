@@ -1,4 +1,8 @@
  "use strict";
+
+const el = document.createElement("script");//紙吹雪のkamifu.jsを持ってくる
+el.src = "kamifu.js";
+
   window.onload = function () {
 	let size, main_image, panels, cell_w, cell_h, canvas, context, image;
 
