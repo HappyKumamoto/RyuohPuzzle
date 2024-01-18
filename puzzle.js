@@ -174,3 +174,8 @@ el.src = "kamifu.js";
 	};
 
        };
+
+let btnReload = document.getElementById('btnReload');
+       btnReload.addEventListener('click', function(){
+        location.reload();
+       });
