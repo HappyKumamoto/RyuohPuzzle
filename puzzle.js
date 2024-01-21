@@ -1,14 +1,50 @@
- "use strict";
+"use strict";
 
-const el = document.createElement("script");//紙吹雪のkamifu.jsを持ってくる
-el.src = "kamifu.js";
+ const el = document.createElement("script");//紙吹雪のkamifu.jsを持ってくる
+ el.src = "kamifu.js";
 
-  window.onload = function () {
+ let imglist = [
+	"img/2012.jpg",
+	"img/231026.jpg",
+	"img/WellTobata.jpg",
+	"img/kenbun.jpg",
+	"img/room.jpg",
+	"img/greenRoom.jpg",
+	"img/kogetudo.jpg",
+	"img/kouji.jpg",
+	"img/monaka.jpg",
+	"img/didakomen.jpg",
+	"img/boad-back2.jpg",
+	"img/inakaan.jpg",
+	"img/road.jpg",
+	"img/sukesan.jpg",
+	"img/kaisen.jpg",
+	"img/doughnut.jpg",
+	"img/neji.jpg",
+	"img/macchajin.jpg",
+	"img/shiso.jpg",
+	"img/koyume.jpg",
+	"img/yomiya.jpg",
+	"img/cookie.jpg",
+	"img/wasei.jpg",
+	"img/ichieda.jpg",
+	"img/lemony.jpg",
+	"img/boad-back.jpg",
+	"img/yoitosa.jpg"
+	];
+	let selectnum = Math.floor(Math.random() * imglist.length);
+	let element = '<img src="' + imglist[ selectnum ] + '" alt="できあがり図" />';
+	target.innerHTML = element;
+	console.log(element);
+	
+
+  window.addEventListener('DOMContentLoaded', function(){
+
 	let size, main_image, panels, cell_w, cell_h, canvas, context, image;
 
 	// 設定
 	size = 3;
-	main_image = "img/2012.jpg";
+	main_image = imglist[selectnum];
 	panels = [];
 	cell_w = 320 / size;
 	cell_h = 320 / size;
@@ -171,11 +207,9 @@ el.src = "kamifu.js";
 	// PC用
 	canvas.onmousedown = function (e) {
 		tap(e);
-	};
+	}}, false );
 
-       };
-
-let btnReload = document.getElementById('btnReload');
-       btnReload.addEventListener('click', function(){
-        location.reload();
-       });
+  let btnReload = document.getElementById('btnReload');
+  btnReload.addEventListener('click', function(){
+  location.reload();
+  });
