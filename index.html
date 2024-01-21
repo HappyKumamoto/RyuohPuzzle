@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -9,17 +9,15 @@
 
 <body>
   <input type="button" value="リロード" id="btnReload">
-  
-  <script src="puzzle.js"></script>
-    <div id="message"><p class="text">9分割3X3パズルです。
+
+  <div id="message"><p class="text">9分割3x3スライドパズルです。
     <br>5秒後に画像がシャッフルされます。</p></div>
-    <canvas id="puzzle_canvas" width="320" height="320"></canvas>
-    <img class="image" src= "img/2012.jpg" alt="できあがり図"> 
-<!--     <br>第36期竜王戦第三局 -->
-<!--   　　　　<br>盤:樹齢４００年以上日向産 榧（かや） 厚さ七寸一分天柾（てんまさ） -->
-<!--     <br>駒:掬水（きくすい）桜井和男さん制作 -->
-    <p class="text"></p>
-    <div class="changeColor"><p></p></div>
-    
+  <div>
+  <canvas id="puzzle_canvas" widty="320" height="320"></canvas>
+  <span id="target"></span><br>
+  <span>(画像の解説を入れる)</span></div> 
+  <!-- 画像と連動した解説 -->
+
+  <script src="puzzle.js"></script>
 </body>
 </html>
