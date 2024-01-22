@@ -32,13 +32,48 @@
 	"img/boad-back.jpg",
 	"img/yoitosa.jpg"
 	];
+
+	let explist = [
+		"2012年1月 第9回小学館全国小学生将棋大会 3年生の部",
+		"第36期竜王戦第3局 大盤解説会場 ウェルとばた",
+		"第36期竜王戦第3局 大盤解説会場 ウェルとばた",
+		"2023年10月24日 第3局 検分",
+		"第3局 対局室",
+		"旧安川邸 竜王控え室",
+		"勝負飯: 明治28年創業 湖月堂特製カレー",
+		"鳥町食堂街 中国料理耕治 必勝竜神膳",
+		"梅園 門司駅前本店 河豚最中",
+		"Labo割烹Mondo 海老香る 門司地ダコの冷製にゅうめん",
+		"盤:日向産 榧(かや)厚さ七寸一分天柾(まさ) 駒:粷水(きくすい)<制作:桜井和男>",
+		"田舎庵 小倉本店 天然鰻の鰻重",
+		"北九州市戸畑区一枝 夜宮こもれびロード",
+		"資さんうどん 肉ごぼ天うどん",
+		"旧松本邸 北の海鮮バターライスっちゃ",
+		"Rcafe・つばめドーナツ 気分で選べる焼きドーナツセット",
+		"GRAN DA ZUR ネジメカ＆コク旨チーズセット",
+		"茶論〜Salon du JAPON MAEDA 茶論ジンジャーエール",
+		"Bekk cucina italiana 北九州産の赤紫蘇ジュース",
+		"タイガーミルク ブティックスイート アイスラテ濃ゆめ",
+		"旧松本邸 夜宮の森の竜玉",
+		"あしかクッキー 区ッキー",
+		"FutureStudio フューチャースタジオ 北九州 和製コーヒー [焙煎玄米麹]",
+		"旧松本邸 一枝アイスティー",
+		"カフェ＆ファクトリー レモニー 北九州ハニーレモネード(アイス・ホット)",
+		"第36期竜王戦第3局 将棋盤 署名",
+		"洋菓子のミロ 戸畑ヨイトサ309-灯"
+		];
+
 	let selectnum = Math.floor(Math.random() * imglist.length);
 	let element = '<img src="' + imglist[ selectnum ] + '" alt="できあがり図" />';
 	target.innerHTML = element;
 	console.log(element);
-	
 
-  window.addEventListener('DOMContentLoaded', function(){
+	let exp = explist[ selectnum ];
+	explan.innerHTML = exp ;
+	console.log(exp);
+	
+	
+window.addEventListener('DOMContentLoaded', function(){
 
 	let size, main_image, panels, cell_w, cell_h, canvas, context, image;
 
