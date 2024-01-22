@@ -30,8 +30,7 @@
 	"img/ichieda.jpg",
 	"img/lemony.jpg",
 	"img/boad-back.jpg",
-	"img/yoitosa.jpg",
-	"img/thoughtful.jpg"
+	"img/yoitosa.jpg"
 	];
 	let selectnum = Math.floor(Math.random() * imglist.length);
 	let element = '<img src="' + imglist[ selectnum ] + '" alt="できあがり図" />';
