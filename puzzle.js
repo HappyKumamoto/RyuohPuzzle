@@ -78,7 +78,7 @@ window.addEventListener('DOMContentLoaded', function(){
 	let size, main_image, panels, cell_w, cell_h, canvas, context, image;
 
 	// 設定
-	size = 3;
+	size = 2;
 	main_image = imglist[selectnum];
 	panels = [];
 	cell_w = 320 / size;
