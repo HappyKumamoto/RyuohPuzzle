@@ -1,0 +1,8 @@
+#puzzle_canvas { top:100px; width:320px; height:320px; }
+	body { background-color: #75A9FF;
+               color: white;
+               text-align: center;
+  }
+ #message {
+   background-color: #AAAAAA;
+ }
