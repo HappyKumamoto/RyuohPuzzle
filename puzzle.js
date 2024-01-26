@@ -229,10 +229,13 @@
 			document.getElementById("message").innerHTML = "<p>\\おめでとうございます。/<br>\\完成です！/<\/p>";
 			context.drawImage(image, 0, 0);
 
-			if(size === 4){
-				document.body.appendChild(el);  //kami.jsで紙吹雪を出す
-			}else{
+			if(size === 2){
 				document.body.appendChild(ko);//koma.js
+				//document.body.appendChild(el);  //kami.jsで紙吹雪を出す
+			}else{
+				document.body.appendChild(el);  //kami.jsで紙吹雪を出す
+				//document.body.appendChild(ko);//koma.js
+				
 			}
 		}
 	}
