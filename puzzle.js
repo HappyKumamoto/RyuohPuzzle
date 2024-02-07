@@ -26,14 +26,15 @@
 	"img/neji.jpg",
 	"img/macchajin.jpg",
 	"img/shiso.jpg",
-	"img/koyume.jpg",
+	"img/itohroom.jpg",
 	"img/yomiya.jpg",
 	"img/cookie.jpg",
 	"img/wasei.jpg",
 	"img/ichieda.jpg",
 	"img/lemony.jpg",
 	"img/boad-back.jpg",
-	"img/yoitosa.jpg"
+	"img/yoitosa.jpg",
+	"img/kansou-2.jpg"
 	];
 
 	let explist = [
@@ -56,14 +57,15 @@
 		"GRAN DA ZUR ネジメカ＆コク旨チーズセット",
 		"茶論〜Salon du JAPON MAEDA 茶論ジンジャーエール",
 		"Bekk cucina italiana 北九州産の赤紫蘇ジュース",
-		"タイガーミルク ブティックスイート アイスラテ濃ゆめ",
+		"挑戦者控室",
 		"旧松本邸 夜宮の森の竜玉",
 		"あしかクッキー 区ッキー",
 		"FutureStudio フューチャースタジオ 北九州 和製コーヒー [焙煎玄米麹]",
 		"旧松本邸 一枝アイスティー",
 		"カフェ＆ファクトリー レモニー 北九州ハニーレモネード(アイス・ホット)",
 		"第36期竜王戦第3局 将棋盤 署名",
-		"洋菓子のミロ 戸畑ヨイトサ309-灯"
+		"洋菓子のミロ 戸畑ヨイトサ309-灯",
+		"感想戦"
 		];
 
 	let selectnum = Math.floor(Math.random() * imglist.length);
